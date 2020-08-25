@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Welcome</title>
+</head>
+<body>
+    
+    <div id="containerh">
+
+
+    </div>
+
+ 
+
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+     <script type="text/javascript">
+      $(window).scroll((){
+        var scroll = $(window).scrollTop(),
+        dh = $(document).height(),
+        wh = $(document).height();
+        value = (scroll /(dh-wh))*100;
+
+        $('#containerh').css('left', - value * 3 + '%');
+      })
+
+     </script>
+
+</body>
+
+</html>
